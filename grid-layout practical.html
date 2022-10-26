@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: rgb(7, 7, 31);
+      }
+      .grid-container {
+        background-color: rgb(83, 79, 138);
+        padding: 0.3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+        gap: 5px;
+      }
+
+      .box {
+        background-color: rgba(10, 207, 233, 0.808);
+        text-align: center;
+      }
+      .box1 {
+        background-color: aquamarine;
+        grid-column: 2/-1;
+        padding: 5px;
+        font-size: xx-large;
+        font-weight: bolder;
+      }
+      .box2 {
+        grid-row: 1/3;
+        padding-top: 35px;
+      }
+      .box3 {
+        grid-column: 2/-1;
+        padding-top: 15px;
+      }
+      .box4 {
+        grid-column: 1/4;
+        padding-top: 15px;
+      }
+      .box5 {
+        grid-column: 1/-1;
+        padding-top: 15px;
+      }
+      .box6 {
+        grid-column: 1/-1;
+        padding-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+    </div>
+  </body>
+</html>

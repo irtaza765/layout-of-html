@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const x = 10
+      const y = 20
+      let k = 10
+      let total = x + y + k
+    </script>
+
+    <div id="divtotal"></div>
+
+    <button
+      id="btn1"
+      onclick="document.getElementById('divtotal').innerHTML=Date();"
+    >
+      BUTTON 1
+    </button>
+
+    <hr />
+
+    <button id="btn2" onclick="dochange();">
+      BUTTON 2
+    </button>
+
+    <script>
+      function dochange() {
+        document.getElementById('btn1').style.backgroundColor = 'green'
+        document.getElementById('btn1').innerText = 'TIME ZONE OF PAKISTAN'
+        document.getElementById('divtotal').style.display = ''
+      }
+    </script>
+  </body>
+</html>

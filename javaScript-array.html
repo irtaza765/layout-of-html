@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="objcar" style="font-size: 24px; font-weight: bold;"></div>
+    <div id="output" style="font-size: 24px; font-weight: bold;"></div>
+    <script>
+      let arrFruits = ['Banana', 'Mango', 'Apple', 'Grapes']
+      // arrFruits.push('Grapes', 'Orange')
+      // arrFruits.unshift('Cherry')
+      // arrFruits.pop()
+      // arrFruits.shift()
+      arrFruits.splice(1, 0, 'Orange', 'Cherry')
+      // document.write(arrFruits[1])
+      // document.getElementById('output').innerHTML = arrFruits[3]
+
+      let objcar = {
+        Brand: 'Toyota',
+        Model: 'Corolla',
+        Color: 'Silver',
+        Brand: 'Toyota',
+        Year: 2022,
+        Tax: 50000,
+        Price: 2500000,
+        GrossPrice: function (price) {
+          return price + 20000
+        },
+        NetPrice: function () {
+          return this.GrossPrice(this.Price) - this.Tax
+        },
+      }
+
+      function CalculateNetPrice(Price, Tax)
+        let GrossPrice = Price + Tax
+            result = GrossPrice - Tax
+
+            return result
+
+      document.getElementById('objcar').innerHTML =
+        objcar.Brand +
+        '<br>' +
+        objcar.Model +
+        '<br>' +
+        objcar.Color +
+        '<br>' +
+        objcar.NetPrice() +
+        '<br>' +
+        objcar.Brand +
+        '<br>' +
+        objcar.Year +
+        '<br>' +
+        objcar.GrossPrice(objcar.Price) +
+        '<br>' +
+        objcar.Tax
+    </script>
+  </body>
+</html>

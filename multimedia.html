@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Video and Audio</title>
+  </head>
+  <body>
+    <div>
+      <video
+        controls
+        width="500"
+        height="280"
+        autoplay
+        loop
+        muted
+        preload="auto"
+        poster="images/start_poster.png"
+      >
+        <source src="videos/movie_1.mp4" type="video/mp4" />
+        <!-- its better to add multiple file formats -->
+        <!-- <source src="movie_1.webm" type="video/webm" /> -->
+
+        <!-- following is optional but a good practice -->
+        <p>
+          Your browser doesn't support HTML video. Here is a
+          <a href="videos/movie_1.mp4">link to the video</a> instead.
+        </p>
+      </video>
+    </div>
+    <hr />
+    <div>
+      <audio controls loop preload="auto">
+        <source src="videos/movie_1.mp4" type="video/mp4" />
+
+        <!-- following is optional but a good practice -->
+        <p>
+          Your browser doesn't support HTML audio. Here is a
+          <a href="videos/movie_1.mp4">link to the audio</a> instead.
+        </p>
+      </audio>
+    </div>
+    <hr />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/7dwGC-iuSL8"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
